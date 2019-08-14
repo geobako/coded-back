@@ -22,6 +22,8 @@ router.get('/test', (req, res) => {
     res.json({meessage: 'server is live'})
 })
 
+// "build": "babel src --out-dir dist",
+
 
 
 export default router
