@@ -23,7 +23,16 @@
         "mongoose": "^5.5.2",
         "morgan": "^1.9.1",
         "nodemon": "^1.18.11",
-        "socket.io": "^2.2.0"
+        "socket.io": "^2.2.0",
+        "@babel/cli": "^7.4.4",
+        "@babel/core": "^7.4.5",
+        "@babel/node": "^7.4.5",
+        "@babel/preset-env": "^7.4.5",
+        "babel-core": "^6.26.3",
+        "babel-loader": "^8.0.6",
+        "babel-polyfill": "^6.26.0",
+        "babel-preset-es2015": "^6.24.1",
+        "babel-preset-stage-0": "^6.24.1"
     },
     "devDependencies": {
         "@babel/cli": "^7.4.4",
