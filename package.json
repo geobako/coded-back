@@ -6,7 +6,7 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "dev": "NODE_ENV=development nodemon --exec babel-node src/server.js",
-        "build": "NODE_ENV=production babel src --out-dir dist && node dist/server.js",
+        "build": "NODE_ENV=development nodemon --exec babel-node src/server.js",
         "start:prod": "NODE_ENV=production npm run build && node dist/server.js"
     },
     "author": "",
