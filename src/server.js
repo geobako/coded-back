@@ -1,4 +1,5 @@
 import http from 'http'
+import 'babel-polyfill';
 import app from './app'
 import keys from './config/keys'
 import mongoose from 'mongoose'
