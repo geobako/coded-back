@@ -6,9 +6,9 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "dev": "NODE_ENV=development nodemon --exec babel-node src/server.js",
-        "build": "NODE_ENV=development nodemon --exec babel-node src/server.js",
+        "build":"babel src --out-dir dist",
         "start:prod": "NODE_ENV=production npm run build && node dist/server.js",
-        "heroku-postbuild": "NODE_ENV=development nodemon --exec babel-node src/server.js"
+        "heroku-postbuild": "NODE_ENV=production npm run build && node dist/server.js"
     },
     "author": "",
     "license": "ISC",
