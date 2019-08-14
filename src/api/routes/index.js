@@ -17,6 +17,11 @@ Use routes
 router.use('/auth', authRoutes)
 router.use('/comment', commentRoutes)
 
+//test route
+router.get('/test', (req, res) => {
+    res.json({meessage: 'server is live'})
+})
+
 
 
 export default router
