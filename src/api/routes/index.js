@@ -1,10 +1,10 @@
-import express from 'express'
+const express = require('express')
 
 /*
 import routes
 */
-import authRoutes from './auth.route'
-import commentRoutes from './comment.route'
+const authRoutes = require('./auth.route')
+const commentRoutes = require('./comment.route')
 
 /*
 initialize router
@@ -19,11 +19,11 @@ router.use('/comment', commentRoutes)
 
 //test route
 router.get('/test', (req, res) => {
-    res.json({meessage: 'server is live'})
+    res.json({ meessage: 'server is live' })
 })
 
 // "build": "babel src --out-dir dist",
 
 
 
-export default router
+module.exports = router

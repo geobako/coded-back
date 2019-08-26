@@ -1,7 +1,7 @@
-import Comment from '../models/comments.model'
-import User from '../models/User.model'
+const Comment = require('../models/comments.model')
+const User = require('../models/User.model')
 
-export const addComment = async (req, res) => {
+exports.addComment = async (req, res) => {
     const { comment, userId, movieTitle } = req.body
     try {
 
@@ -21,7 +21,7 @@ export const addComment = async (req, res) => {
     }
 }
 
-export const getComments = async (req, res) => {
+exports.getComments = async (req, res) => {
     const { movieTitle } = req.body
     try {
 

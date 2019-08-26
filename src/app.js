@@ -1,10 +1,10 @@
-import express from 'express'
-import bodyParser from 'body-parser'
-import cors from 'cors'
-import helmet from 'helmet'
-import morgan from 'morgan'
-import compression from 'compression'
-import router from './api/routes/index'
+const express = require('express')
+const bodyParser = require('body-parser')
+const cors = require('cors')
+const helmet = require('helmet')
+// const morgan = require('morgan')
+const compression = require('compression')
+const router = require('./api/routes/index')
 
 
 const app = express()
@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json({ limit: "50mb" }))
 app.use(bodyParser.raw())
 app.use(cors())
-app.use(morgan('dev'))
+// app.use(morgan('dev'))
 
 
 /*
@@ -34,4 +34,4 @@ app.use('/', router)
 
 
 
-export default app
+module.exports = app

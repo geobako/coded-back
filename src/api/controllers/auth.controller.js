@@ -1,9 +1,9 @@
-import User from '../models/User.model.js'
-import bcrypt from 'bcryptjs'
-import jwt from 'jsonwebtoken'
-import keys from '../../config/keys'
+const User = require('../models/User.model.js')
+const bcrypt = require('bcryptjs')
+const jwt = require('jsonwebtoken')
+const keys = require('../../config/keys')
 
-export const register = async (req, res) => {
+exports.register = async (req, res) => {
 
     const { email, password } = req.body
     const foundUser = await User.findOne({ email })
@@ -27,7 +27,7 @@ export const register = async (req, res) => {
     }
 }
 
-export const login = async (req, res) => {
+exports.login = async (req, res) => {
     try {
         const { email, password } = req.body
         let loadedUser

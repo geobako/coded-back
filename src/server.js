@@ -1,9 +1,8 @@
-import http from 'http'
-import 'babel-polyfill';
-import app from './app'
-import keys from './config/keys'
-import mongoose from 'mongoose'
-import socketio from 'socket.io'
+const http = require('http')
+const app = require('./app')
+const keys = require('./config/keys')
+const mongoose = require('mongoose')
+const socketio = require('socket.io')
 
 
 

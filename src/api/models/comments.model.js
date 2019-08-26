@@ -1,6 +1,6 @@
-import mongoose, { Schema } from 'mongoose'
+const mongoose = require('mongoose')
 
-const commentSchema = new Schema({
+const commentSchema = new mongoose.Schema({
     userId: {
         type: String,
         required: true
@@ -21,4 +21,4 @@ const commentSchema = new Schema({
 }, { timestamps: true })
 
 
-export default mongoose.model('Comment', commentSchema)
+module.exports = mongoose.model('Comment', commentSchema)

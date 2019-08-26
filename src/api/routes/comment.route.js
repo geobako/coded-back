@@ -1,5 +1,5 @@
-import express from 'express'
-import { addComment, getComments } from '../controllers/comment.controller'
+const express = require('express')
+const { addComment, getComments } = require('../controllers/comment.controller')
 
 const CommentRouter = express.Router()
 
@@ -11,4 +11,4 @@ CommentRouter.post('/all', getComments)
 
 
 
-export default CommentRouter
+module.exports = CommentRouter

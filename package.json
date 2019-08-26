@@ -6,9 +6,7 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "dev": "NODE_ENV=development nodemon --exec babel-node src/server.js",
-        "build": "babel src --out-dir dist",
-        "start": "node ./dist/server.js",
-        "start:prod": "NODE_ENV=production npm run build && node dist/server.js"
+        "start": "node ./src/server.js"
     },
     "author": "",
     "license": "ISC",
@@ -36,6 +34,6 @@
         "babel-preset-stage-0": "^6.24.1"
     },
     "devDependencies": {
-       
+
     }
 }

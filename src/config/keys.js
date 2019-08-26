@@ -1,4 +1,4 @@
-import dotenv from 'dotenv'
+const dotenv = require('dotenv')
 
 /*
 configure NODE_ENV
@@ -12,4 +12,4 @@ const keys = {
     mongoConnectionString: process.env.MONGO_CONNECTION_STRING
 }
 
-export default keys
+module.exports = keys
